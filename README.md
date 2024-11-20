@@ -1,2 +1,2 @@
-# titanic-survival-prediction
-Machine learning project focused on predicting passenger survival on the Titanic using various ML models and ensemble techniques. Part of the Kaggle Titanic competition.
+# Titanic Survival Prediction
+This project aims to predict passenger survival on the Titanic using machine learning techniques. It's based on the famous Kaggle Titanic competition, which serves as an introduction to machine learning concepts.
