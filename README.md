@@ -86,7 +86,8 @@ MIT
 
 Fatih Evliyaoglu
 
-GitHub: [@fatihevliyaoglu]
+GitHub: @fatihevliyaoglu
+
 LinkedIn: [https://www.linkedin.com/in/fatih-evliyaoglu-aa5a6019b/]
 
 Acknowledgments
