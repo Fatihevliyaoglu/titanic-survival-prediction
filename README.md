@@ -14,3 +14,17 @@ This project aims to predict passenger survival on the Titanic using machine lea
 ├── src/             # Source code
 └── tests/           # Unit tests
 ``` 
+
+## Features
+
+- Comprehensive exploratory data analysis (EDA)
+- Feature engineering pipeline
+- Multiple machine learning models:
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+
+
+- Model ensembling techniques
+- Cross-validation strategy
+- Performance metrics and analysis
