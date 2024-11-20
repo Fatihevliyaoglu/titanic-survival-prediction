@@ -5,10 +5,12 @@ This project aims to predict passenger survival on the Titanic using machine lea
 
 ## Project Structure
 
-```├── data/
+```
+├── data/
 │   ├── raw/          # Original data files
 │   ├── processed/    # Cleaned and processed data
 │   └── predictions/  # Model predictions
 ├── notebooks/        # Jupyter notebooks for analysis
 ├── src/             # Source code
-└── tests/           # Unit tests```
+└── tests/           # Unit tests
+``` 
