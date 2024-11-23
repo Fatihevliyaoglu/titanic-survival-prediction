@@ -1,48 +1,51 @@
 # Titanic Survival Prediction
 
 ## Overwiev
-This project aims to predict passenger survival on the Titanic using machine learning techniques. It's based on the famous Kaggle Titanic competition, which serves as an introduction to machine learning concepts.
+Advanced machine learning project predicting Titanic passenger survival using ensemble methods and hyperparameter optimization.
 
 ## Project Structure
 
 ```
+titanic-survival-prediction/
+│
 ├── data/
-│   ├── raw/          # Original data files
-│   ├── processed/    # Cleaned and processed data
-│   └── predictions/  # Model predictions
-├── notebooks/        # Jupyter notebooks for analysis
-├── src/             # Source code
-└── tests/           # Unit tests
+│   ├── raw/                # Original datasets
+│   ├── processed/          # Processed datasets
+│   ├── models/             # Saved model files
+│   └── predictions/        # Model predictions
+│
+├── notebooks/
+│   ├── 01_EDA.ipynb                     # Exploratory analysis
+│   ├── 02_Feature_Engineering.ipynb     # Feature creation
+│   ├── 03_Model_Development.ipynb       # Individual models
+│   ├── 04_Ensemble_Building.ipynb       # Ensemble creation
+│   └── 05_Final_Evaluation.ipynb        # Final evaluation
+│
+├── src/
+│   ├── preprocessing.py   # Data preprocessing
+│   ├── models.py          # Base models
+│   ├── tuning.py          # Hyperparameter optimization
+│   └── ensemble.py        # Ensemble methods
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 ``` 
 
 ## Features
 
-- Comprehensive exploratory data analysis (EDA)
-- Feature engineering pipeline
-- Multiple machine learning models:
-  - Logistic Regression
-  - Random Forest
-  - XGBoost
-
-
-- Model ensembling techniques
+- Decision Tree classifier hyperparameter tuning
+- Random Forest optimization
+- XGBoost implementation
+- Stacking ensemble of optimized models
 - Cross-validation strategy
-- Performance metrics and analysis
-
-## Technologies Used
-
-- Python 3.8+
-- Scikit-learn
-- Pandas
-- NumPy
-- XGBoost
-- Matplotlib/Seaborn
+- Feature importance analysis
 
 ## Installation
 
 ```
 # Clone the repository
-git clone https://github.com/yourusername/titanic-survival-prediction.git
+git clone https://github.com/Fatihevliyaoglu/titanic-survival-prediction.git
 
 # Navigate to the project directory
 cd titanic-survival-prediction
@@ -53,12 +56,22 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Put the Kaggle competition data files in data/raw/
-2. Run the notebooks in order:
-  - 01_EDA.ipynb
-  - 02_Feature_Engineering.ipynb
-  - 03_Model_Development.ipynb
-  - 04_Model_Evaluation.ipynb
+Follow notebooks in numerical order:
+
+1. EDA for data understanding
+2. Feature engineering
+3. Base model development
+4. Ensemble creation
+5. Final model evaluation
+
+## Model Architecture
+
+- Base Models:
+  - Decision Tree
+  - Random Forest
+  - XGBoost
+- Hyperparameter Optimization: GridSearchCV
+- Final Ensemble: Stacking with LogisticRegression meta-learner
 
 ## Results
 
@@ -68,13 +81,6 @@ pip install -r requirements.txt
   - [Insight 1]
   - [Insight 2]
   - [Insight 3]
-
-## Future Improvements
-
-- Feature selection optimization
-- Advanced ensemble techniques
-- Hyperparameter tuning
-- Deep learning approaches
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -89,8 +95,3 @@ Fatih Evliyaoglu
 GitHub: @fatihevliyaoglu
 
 LinkedIn: [https://www.linkedin.com/in/fatih-evliyaoglu-aa5a6019b/]
-
-## Acknowledgments
-
-- Kaggle for providing the competition platform
-- The Titanic competition community for insights and discussions
