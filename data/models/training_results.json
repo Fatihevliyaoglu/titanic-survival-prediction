@@ -1,0 +1,115 @@
+{
+    "best_params": {
+        "decision_tree": {
+            "max_depth": 5,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2
+        },
+        "random_forest": {
+            "max_depth": 5,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "n_estimators": 200
+        },
+        "xgboost": {
+            "learning_rate": 0.1,
+            "max_depth": 3,
+            "n_estimators": 200
+        }
+    },
+    "best_scores": {
+        "decision_tree": {
+            "validation_accuracy": 0.8547486033519553,
+            "best_cv_score": 0.8019107652910471,
+            "classification_report": {
+                "0.0": {
+                    "precision": 0.883495145631068,
+                    "recall": 0.8666666666666667,
+                    "f1-score": 0.875,
+                    "support": 105.0
+                },
+                "1.0": {
+                    "precision": 0.8157894736842105,
+                    "recall": 0.8378378378378378,
+                    "f1-score": 0.8266666666666667,
+                    "support": 74.0
+                },
+                "accuracy": 0.8547486033519553,
+                "macro avg": {
+                    "precision": 0.8496423096576393,
+                    "recall": 0.8522522522522522,
+                    "f1-score": 0.8508333333333333,
+                    "support": 179.0
+                },
+                "weighted avg": {
+                    "precision": 0.855505091306669,
+                    "recall": 0.8547486033519553,
+                    "f1-score": 0.8550186219739293,
+                    "support": 179.0
+                }
+            }
+        },
+        "random_forest": {
+            "validation_accuracy": 0.8268156424581006,
+            "best_cv_score": 0.8342263370432385,
+            "classification_report": {
+                "0.0": {
+                    "precision": 0.8363636363636363,
+                    "recall": 0.8761904761904762,
+                    "f1-score": 0.8558139534883721,
+                    "support": 105.0
+                },
+                "1.0": {
+                    "precision": 0.8115942028985508,
+                    "recall": 0.7567567567567568,
+                    "f1-score": 0.7832167832167832,
+                    "support": 74.0
+                },
+                "accuracy": 0.8268156424581006,
+                "macro avg": {
+                    "precision": 0.8239789196310936,
+                    "recall": 0.8164736164736165,
+                    "f1-score": 0.8195153683525777,
+                    "support": 179.0
+                },
+                "weighted avg": {
+                    "precision": 0.8261237588417574,
+                    "recall": 0.8268156424581006,
+                    "f1-score": 0.825801715499,
+                    "support": 179.0
+                }
+            }
+        },
+        "xgboost": {
+            "validation_accuracy": 0.8379888268156425,
+            "best_cv_score": 0.8257953314291342,
+            "classification_report": {
+                "0.0": {
+                    "precision": 0.8584905660377359,
+                    "recall": 0.8666666666666667,
+                    "f1-score": 0.8625592417061612,
+                    "support": 105.0
+                },
+                "1.0": {
+                    "precision": 0.8082191780821918,
+                    "recall": 0.7972972972972973,
+                    "f1-score": 0.8027210884353742,
+                    "support": 74.0
+                },
+                "accuracy": 0.8379888268156425,
+                "macro avg": {
+                    "precision": 0.8333548720599638,
+                    "recall": 0.831981981981982,
+                    "f1-score": 0.8326401650707677,
+                    "support": 179.0
+                },
+                "weighted avg": {
+                    "precision": 0.837707981072874,
+                    "recall": 0.8379888268156425,
+                    "f1-score": 0.8378216811361151,
+                    "support": 179.0
+                }
+            }
+        }
+    }
+}
