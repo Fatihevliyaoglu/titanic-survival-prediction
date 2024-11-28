@@ -85,9 +85,11 @@ Follow notebooks in numerical order:
 - Current Kaggle score: [Your Score]
 - Best performing model: DecisionTree: 85,47%
 - Key insights:
-  - [Insight 1]
-  - [Insight 2]
-  - [Insight 3]
+  - Gender and Class are the strongest predictors of survival (females and higher-class passengers had higher survival rates)
+  - Family size impacts survival - passengers traveling in small family groups (2-4 members) had better survival rates than those traveling alone or in large groups
+  - Age plays a significant role - children (especially from first and second class) had higher survival rates
+  - Cabin location (Deck) shows correlation with survival, though this data is partially missing
+  - Fare amount correlates with survival, likely due to its relationship with passenger class
 
 ## License
 MIT
