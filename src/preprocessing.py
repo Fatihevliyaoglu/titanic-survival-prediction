@@ -8,7 +8,7 @@ class TitanicPreprocessor(BaseEstimator, TransformerMixin):
     def __init__(self):
         self.numeric_features = ['Age', 'Fare', 'FamilySize', 'FarePerPerson']
         self.categorical_features = ['Sex', 'Embarked', 'Title', 'AgeBin', 
-                                   'FamilyType', 'Deck', 'FareBin']
+                                   'FamilyType', 'FareBin']
         self.binary_features = ['IsChild', 'IsAlone', 'HasCabin']
         
     def fit(self, X, y=None):
@@ -27,7 +27,7 @@ class TitanicPreprocessor(BaseEstimator, TransformerMixin):
 
         categorical_transformer = Pipeline(steps=[
             ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
-            ('onehot', OneHotEncoder(drop='first', sparse=False))
+            ('onehot', OneHotEncoder(drop='first', sparse_output=False))
         ])
 
         binary_transformer = Pipeline(steps=[
