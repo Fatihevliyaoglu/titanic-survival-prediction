@@ -15,31 +15,37 @@ titanic-survival-prediction/
 │   └── predictions/        # Model predictions
 │
 ├── notebooks/
-│   ├── 01_EDA.ipynb                     # Exploratory analysis
+│   ├── 01_EDA.ipynb                    # Exploratory analysis
 │   ├── 02_Feature_Engineering.ipynb     # Feature creation
-│   ├── 03_Model_Development.ipynb       # Individual models
-│   ├── 04_Ensemble_Building.ipynb       # Ensemble creation
-│   └── 05_Final_Evaluation.ipynb        # Final evaluation
+│   ├── 03_Preprocessing.ipynb          # Data preprocessing
+│   ├── 04_Model_Development.ipynb      # Model training
+│   ├── 05_Ensemble_Building.ipynb      # Ensemble creation
+│   └── 06_Final_Prediction.ipynb       # Prediction generation
 │
 ├── src/
-│   ├── preprocessing.py   # Data preprocessing
-│   ├── models.py          # Base models
-│   ├── tuning.py          # Hyperparameter optimization
+│   ├── preprocessing.py    # Preprocessing pipeline
+│   ├── models.py          # Model implementations
 │   └── ensemble.py        # Ensemble methods
+│   └── predict.py         # Prediction pipeline
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ``` 
 
-## Features
+# Models Implemented
 
-- Decision Tree classifier hyperparameter tuning
-- Random Forest optimization
-- XGBoost implementation
-- Stacking ensemble of optimized models
+- Decision Tree classifier
+- Random Forest classifier
+- XGBoost classifier
+- Stacking ensemble
+
+## Features
+- Comprehensive data preprocessing
+- Feature engineering
+- Model hyperparameter tuning
+- Ensemble modeling
 - Cross-validation strategy
-- Feature importance analysis
 
 ## Installation
 
@@ -58,11 +64,12 @@ pip install -r requirements.txt
 
 Follow notebooks in numerical order:
 
-1. EDA for data understanding
-2. Feature engineering
-3. Base model development
-4. Ensemble creation
-5. Final model evaluation
+- Run notebooks in order:
+  - Start with EDA
+  - Process through model development
+  - End with predictions
+
+- Final submission file will be generated in data/predictions/
 
 ## Model Architecture
 
@@ -76,14 +83,11 @@ Follow notebooks in numerical order:
 ## Results
 
 - Current Kaggle score: [Your Score]
-- Best performing model: [Model Name]
+- Best performing model: DecisionTree: 85,47%
 - Key insights:
   - [Insight 1]
   - [Insight 2]
   - [Insight 3]
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 MIT
