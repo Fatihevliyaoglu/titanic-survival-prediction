@@ -82,7 +82,6 @@ Follow notebooks in numerical order:
 
 ## Results
 
-- Current Kaggle score: [Your Score]
 - Best performing model: DecisionTree: 85,47%
 - Key insights:
   - Gender and Class are the strongest predictors of survival (females and higher-class passengers had higher survival rates)
