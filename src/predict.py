@@ -21,8 +21,8 @@ class PredictionPipeline:
         raw_test = pd.read_csv('../data/raw/test.csv')
 
         submission = pd.DataFrame({
-            'PassengerId': raw_test['PassengerId'],
-            'Survived': predictions
+            'PassengerId': raw_test['PassengerId'].astype(int),
+            'Survived': predictions.astype(int)
         })
 
         # Save submission
